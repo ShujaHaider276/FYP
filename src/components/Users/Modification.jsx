@@ -3,9 +3,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "jquery/dist/jquery.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
 import SideBAR from "../SideBAR";
+import {useNavigate} from 'react-router-dom';
+import PermissionList from "./PermissionList";
 import "./AddUser.css";
 
 const Modification = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     employNumber: "",
     employname: "",
@@ -33,6 +36,10 @@ const Modification = () => {
       ...formData,
       [name]: value,
     });
+  };
+
+  const handlePermissions = () =>{
+    navigate('/Users/PermissionList');
   };
 
   const ApiCaller = async (props) => {
@@ -66,7 +73,7 @@ const Modification = () => {
       <SideBAR>
         <div className="main_container">
           <div className="container mt-5 form-group">
-            <h1 className="H">User Registration Form</h1>
+            <h1 className="H">User Modification Form</h1>
             <form className="form_container" onSubmit={handleSubmit}>
               <div className="mb-3">
                 <label htmlFor="employNumber" className="form-label">
