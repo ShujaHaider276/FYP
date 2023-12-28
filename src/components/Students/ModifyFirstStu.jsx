@@ -9,19 +9,19 @@ const FirstSections = () => {
   const navigate = useNavigate();
   const handleClickforA=()=>{
     console.log("Clicked Sec A");
-    navigate('/ViewAttendence/FirstSections/FirstSectionA')
+    navigate('/Students/ModifyFirstStu/ModifyFirstStuA')
     // console.log(navigate);
   };
 
   const handleClickforB=()=>{
     console.log("Clicked Sec B");
-    navigate('/ViewAttendence/FirstSections/FirstSectionB')
+    navigate('/Students/ModifyFirstStu/ModifyFirstStuB')
     // console.log(navigate);
   };
   return (
     <div>
       <SideBAR>
-        <h1>ViewAttendence</h1>
+        <h1>Modify Students</h1>
         <div className='VA_main'>
           <div className='classes' id='sectionA' onClick={handleClickforA}>Section A</div>
           <div className='classes' id='sectionB' onClick={handleClickforB}>Section B</div>
@@ -32,4 +32,3 @@ const FirstSections = () => {
 }
 
 export default FirstSections;
-

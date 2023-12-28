@@ -1,26 +1,23 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import "../../Users/DeleteUser.css";
-import SideBAR from '../../SideBAR';
+import "../Users/DeleteUser.css";
+import SideBAR from '../SideBAR';
 
 const SectionA = () => {
   const navigate = useNavigate();
-  const handleClickforViewAttendence=()=>{
-    console.log("Clicked ViewAttendence");
-    navigate('/ViewAttendence/FirstSections')
-    // console.log(navigate);
+  const handleClickforMonthlyAttendence=()=>{
+    console.log("MonthlyAttendance");
+    navigate('/ViewAttendence/MonthlyAttendance')
   };
 
-  const handleClickforViewReports=()=>{
-    console.log("Clicked ViewReports");
-    navigate('/ViewAttendence/SecondSections')
-    // console.log(navigate);
+  const handleClickforWeeklyAttendance=()=>{
+    console.log("WeeklyAttendance");
+    navigate('/ViewAttendence/WeeklyAttendance')
   };
 
-  const handleClickforViewFine=()=>{
-    console.log("Clicked ViewFine");
-    navigate('/ViewAttendence/ThirdSections')
-    // console.log(navigate);
+  const handleClickforTodayStatus=()=>{
+    console.log("TodayStatus");
+    navigate('/ViewAttendence/TodayStatus')
   };
 
   const [students, setStudents] = useState([
@@ -35,19 +32,19 @@ const SectionA = () => {
         <div className='user_h'>
           <h1>1st YEAR</h1>
           <div className='user_Management'>
-            <h2>SECTION A</h2>
+            <h2>SECTION B</h2>
             <ul className='users'>
               {students.map((students) => (
                 <li key={students.id}>
                   {students.name}{' '}
                   <label>
-                  <button id='btnA1' className='button' onClick={handleClickforViewAttendence}>View Attendence</button>
+                  <button id='btnA1' className='button' onClick={handleClickforMonthlyAttendence}>Monthly Attendance</button>
                   </label>
                   <label>
-                  <button id='btnC1' className='button' onClick={handleClickforViewReports}>View Reports</button>
+                  <button id='btnC1' className='button' onClick={handleClickforWeeklyAttendance}>Weekly Attendance</button>
                   </label>
                   <label>
-                  <button id='btnD1' className='button' onClick={handleClickforViewFine}>View Fine</button>
+                  <button id='btnD1' className='button' onClick={handleClickforTodayStatus}>Today Status</button>
                   </label>
                 </li>
               ))}

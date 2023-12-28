@@ -25,6 +25,23 @@ import PermissionList from "./components/Users/PermissionList";
 import ModifyStu from "./components/Students/ModifyStu";
 import Modification from "./components/Users/Modification";
 import FirstSections from "./components/ViewAttendance/FirstSections";
+import SecondSections from "./components/ViewAttendance/SecondSections";
+import ThirdSections from "./components/ViewAttendance/ThirdSections";
+import FirstSectionA from "./components/ViewAttendance/FirstSectionA";
+import FirstSectionB from "./components/ViewAttendance/FirstSectionB";
+import SecondSectionA from "./components/ViewAttendance/SecondSectionA";
+import SecondSectionB from "./components/ViewAttendance/SecondSectionB";
+import ThirdSectionA from "./components/ViewAttendance/ThirdSectionA";
+import ThirdSectionB from "./components/ViewAttendance/ThirdSectionB";
+import ModifyFirstStu from "./components/Students/ModifyFirstStu";
+import ModifySecond from "./components/Students/ModifySecond";
+import ModifyThird from "./components/Students/ModifyThird";
+import ModifyFristStuA from "./components/Students/ModifyFirstStuA";
+import ModifyFristStuB from "./components/Students/ModifyFirstStuB";
+import ModifySecondA from "./components/Students/ModifySecondA";
+import ModifySecondB from "./components/Students/ModifySecondB";
+import ModifyThirdA from "./components/Students/ModifyThirdA";
+import ModifyThirdB from "./components/Students/ModifyThirdB";
 
 
 ReactDOM.render(
@@ -33,11 +50,27 @@ ReactDOM.render(
       <Route path="/" element={<Dashboard />}> </Route>
       <Route path="/Dashboard" element={<Dashboard />}> </Route>
       <Route path="/MarkAttendence" element={<MarkAttendence />}> </Route>
-      <Route path="/ViewAttendence" element={<ViewAttendence />}>
-        <Route path="firstSections" element={<FirstSections />} />
-      </Route>
+      <Route path="/ViewAttendence" element={<ViewAttendence />}></Route>
+      <Route path="/ViewAttendence/FirstSections" element={<FirstSections />} />
+      <Route path="/ViewAttendence/SecondSections" element={<SecondSections />} />
+      <Route path="/ViewAttendence/ThirdSections" element={<ThirdSections />} />
+      <Route path="/ViewAttendence/FirstSections/FirstSectionA" element={<FirstSectionA />} />
+      <Route path="/ViewAttendence/FirstSections/FirstSectionB" element={<FirstSectionB />} />
+      <Route path="/ViewAttendence/SecondSections/SecondSectionA" element={<SecondSectionA />} />
+      <Route path="/ViewAttendence/SecondSections/SecondSectionB" element={<SecondSectionB />} />
+      <Route path="/ViewAttendence/ThirdSections/ThirdSectionA" element={<ThirdSectionA />} />
+      <Route path="/ViewAttendence/ThirdSections/ThirdSectionB" element={<ThirdSectionB />} />
       <Route path="/Reports" element={<Reports />}> </Route>
       <Route path="/Fine" element={<Fine />}> </Route>
+      <Route path="/Students/ModifyFirstStu" element={<ModifyFirstStu />} />
+      <Route path="/Students/ModifySecond" element={<ModifySecond />} />
+      <Route path="/Students/ModifyThird" element={<ModifyThird />} />
+      <Route path="/Students/ModifyFirstStu/ModifyFirstStuA" element={<ModifyFristStuA />} />
+      <Route path="/Students/ModifyFirstStu/ModifyFirstStuB" element={<ModifyFristStuB />} />
+      <Route path="/Students/ModifySecond/ModifySecondA" element={<ModifySecondA />} />
+      <Route path="/Students/ModifySecond/ModifySecondB" element={<ModifySecondB />} />
+      <Route path="/Students/ModifyThird/ModifyThirdA" element={<ModifyThirdA />} />
+      <Route path="/Students/ModifyThird/ModifyThirdB" element={<ModifyThirdB />} />
       {/* Classes */}
       <Route path="/classes" >
         <Route path="first-Year" >

@@ -65,10 +65,21 @@
   width: 100%; /* Adjusted width for smaller screens */
   max-width: 25rem; /* Added max-width for larger screens */
   margin: 8rem 1rem; /* Adjusted margin for smaller screens */
-  border: .1rem solid red;
-  border-radius: 8px;
+  border: .4rem solid rgb(113, 221, 185);
+  border-radius: 8px 100px;
   align-items: center;
   text-align: center;
+  padding-top: 8rem;
+  font-size: 4rem;
+  font-weight: bolder;
+  font-style: italic;
+  color: rgb(113, 221, 185);
+}
+.VA_main .classes:hover{
+  font-size: 5rem;
+  border: .2rem solid red;
+  color: rgb(221, 73, 73);
+  border-radius: 8px 100px;
 }
 
 /* View Attendance SECTION */

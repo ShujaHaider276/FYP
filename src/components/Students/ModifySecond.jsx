@@ -4,24 +4,23 @@ import SideBAR from '../SideBAR';
 import "../../index.css";
 import { useNavigate } from 'react-router-dom';
 
-
-const FirstSections = () => {
+const SecondSections = () => {
   const navigate = useNavigate();
   const handleClickforA=()=>{
     console.log("Clicked Sec A");
-    navigate('/ViewAttendence/FirstSections/FirstSectionA')
+    navigate('/Students/ModifySecond/ModifySecondA')
     // console.log(navigate);
   };
 
   const handleClickforB=()=>{
     console.log("Clicked Sec B");
-    navigate('/ViewAttendence/FirstSections/FirstSectionB')
+    navigate('/Students/ModifySecond/ModifySecondB')
     // console.log(navigate);
   };
   return (
     <div>
       <SideBAR>
-        <h1>ViewAttendence</h1>
+        <h1>Modify Student</h1>
         <div className='VA_main'>
           <div className='classes' id='sectionA' onClick={handleClickforA}>Section A</div>
           <div className='classes' id='sectionB' onClick={handleClickforB}>Section B</div>
@@ -31,5 +30,5 @@ const FirstSections = () => {
   )
 }
 
-export default FirstSections;
+export default SecondSections;
 
