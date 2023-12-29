@@ -15,7 +15,6 @@ import SectionA3 from "./components/Classes/ThridYear/SectionA";
 import SectionB1 from "./components/Classes/FirstYear/SectionB";
 import SectionB2 from "./components/Classes/SecondYear/SectionB";
 import SectionB3 from "./components/Classes/ThridYear/SectionB";
-import DeleteStudent from "./components/Students/DeleteStudent";
 import ModifyStudent from "./components/Students/ModifyStudent";
 import AddUser from "./components/Users/AddUser";
 import DeleteUser from "./components/Users/DeleteUser";
@@ -42,6 +41,17 @@ import ModifySecondA from "./components/Students/ModifySecondA";
 import ModifySecondB from "./components/Students/ModifySecondB";
 import ModifyThirdA from "./components/Students/ModifyThirdA";
 import ModifyThirdB from "./components/Students/ModifyThirdB";
+import DeleteStudent from "./components/Students/DeleteStudent";
+import DeleteFirst from "./components/Students/DeleteFirst";
+import DeleteSecond from "./components/Students/DeleteSecond";
+import DeleteThird from "./components/Students/DeleteThird";
+import DeleteFirstA from "./components/Students/DeleteFirstA";
+import DeleteFirstB from "./components/Students/DeleteFirstB";
+import DeleteSecondA from "./components/Students/DeleteSecondA";
+import DeleteSecondB from "./components/Students/DeleteSecondB";
+import DeleteThirdA from "./components/Students/DeleteThirdA";
+import DeleteThirdB from "./components/Students/DeleteThirdB";
+
 
 
 ReactDOM.render(
@@ -71,6 +81,15 @@ ReactDOM.render(
       <Route path="/Students/ModifySecond/ModifySecondB" element={<ModifySecondB />} />
       <Route path="/Students/ModifyThird/ModifyThirdA" element={<ModifyThirdA />} />
       <Route path="/Students/ModifyThird/ModifyThirdB" element={<ModifyThirdB />} />
+      <Route path="/Students/DeleteFirst" element={<DeleteFirst />} > </Route>
+      <Route path="/Students/DeleteSecond" element={<DeleteSecond />} > </Route>
+      <Route path="/Students/DeleteThird" element={<DeleteThird />} > </Route>
+      <Route path="/Students/DeleteFirst/DeleteFirstA" element={<DeleteFirstA />} > </Route>
+      <Route path="/Students/DeleteFirst/DeleteFirstB" element={<DeleteFirstB />} > </Route>
+      <Route path="/Students/DeleteSecond/DeleteSecondA" element={<DeleteSecondA />} > </Route>
+      <Route path="/Students/DeleteSecond/DeleteSecondB" element={<DeleteSecondB />} > </Route>
+      <Route path="/Students/DeleteThird/DeleteThirdA" element={<DeleteThirdA />} > </Route>
+      <Route path="/Students/DeleteThird/DeleteThirdB" element={<DeleteThirdB />} > </Route>
       {/* Classes */}
       <Route path="/classes" >
         <Route path="first-Year" >

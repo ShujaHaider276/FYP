@@ -5,7 +5,7 @@ import "../../index.css";
 import { useNavigate } from 'react-router-dom';
 
 
-const FirstSections = () => {
+const ModifyFirstStu = () => {
   const navigate = useNavigate();
   const handleClickforA=()=>{
     console.log("Clicked Sec A");
@@ -31,4 +31,4 @@ const FirstSections = () => {
   )
 }
 
-export default FirstSections;
+export default ModifyFirstStu;

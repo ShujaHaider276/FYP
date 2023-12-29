@@ -56,13 +56,13 @@ const ModifyStudent = () => {
 
   const handleClickfor2=()=>{
     console.log("Clicked 2nd Year");
-    navigate('/ViewAttendence/SecondSections')
+    navigate('/Students/ModifySecond')
     // console.log(navigate);
   };
 
   const handleClickfor3=()=>{
     console.log("Clicked 3rd Year");
-    navigate('/ViewAttendence/ThirdSections')
+    navigate('/Students/ModifyThird')
     // console.log(navigate);
   };
   return (
