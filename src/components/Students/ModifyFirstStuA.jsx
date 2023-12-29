@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "../Users/DeleteUser.css";
+import "./DeleteStudents.css"
 import SideBAR from '../SideBAR';
 
 const ModifyFirstStuA = () => {

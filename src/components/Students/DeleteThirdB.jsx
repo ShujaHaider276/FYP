@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SideBAR from '../SideBAR';
-import "./DeleteStudents.css"
+import "../Users/DeleteUser.css";
 
 const DeleteThirdB = () => {
   const [students, setStudents] = useState([
@@ -26,7 +26,7 @@ const DeleteThirdB = () => {
               {students.map((students) => (
                 <li key={students.id}>
                   {students.name}{' '}
-                  <button id='del_btn' onClick={() => handleDeleteStudents(students.id)}>Delete</button>
+                  <button id='del_btn' className='button' onClick={() => handleDeleteStudents(students.id)}>Delete</button>
                 </li>
               ))}
             </ul>

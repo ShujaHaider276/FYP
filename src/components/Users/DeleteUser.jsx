@@ -27,7 +27,7 @@ const DeleteUser = () => {
                 <li key={user.id}>
                   {user.name}{' '}
                   <label>
-                    <button id='del_btn' onClick={() => handleDeleteUser(user.id)}>Delete</button>
+                    <button id='del_btn' className='button' onClick={() => handleDeleteUser(user.id)}>Delete</button>
                   </label>
                 </li>
               ))}
